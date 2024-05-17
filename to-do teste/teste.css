@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+main{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.conteudo-lista{
+    box-shadow: .4em 0.4em 1em rgba(0, 0, 0, 0.323);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 50%;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.item-lista{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #c9c9c96f;
+    margin: 10px 10px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.listaDeCoisas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+
+}
+
+.Adicionar-tarefa{
+    box-shadow: .4em 0.4em 1em rgba(0, 0, 0, 0.323);
+    padding: 20px 20px;
+    width: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    height:30%;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.flag-lista{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+
+h1{
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: bolder;
+    color: rgb(36, 117, 184);
+}
+
+.input-icone{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px 30px 15px 30px;
+    justify-content: space-evenly;
+    background-color:#c9c9c96f;
+    width: 100%;
+}
+
+.input-icone input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.input-icone i{
+    color: #898989;
+}
+
+.prin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.alinhar-campos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 25px;
+}
+
+
+.tipo{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border-style: none;
+    padding: 15px 30px 15px 30px;
+    background-color:#c9c9c96f;
+    width: calc(50% - 20px);
+    color: #898989;
+}
+.tipo:focus-visible{
+    outline: none;
+}
+
+#botao{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(81, 81, 243);
+    border-style: none;
+    border-radius: 5px;
+    padding: 15px 30px 15px 30px;
+    height: auto;
+    width: 90%;
+    color: #ffffff;
+    margin-left: 25px;
+}
+.titulo{
+    display: flex;
+    justify-content:start;
+    width: 90%;
+    margin-bottom: 10px;
+}
+.titulo1{
+    margin-left: 20px;
+}
+.item-lista span{
+        order: -1;   
+}
+
+#botao:hover{
+    background-color: rgba(81, 81, 243, 0.812);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}

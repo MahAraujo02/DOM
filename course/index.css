@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-style: none;
+}
+.tela {
+    width: 50%;
+    height: 60%;
+    background-color: beige;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.titulo_frutas{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.img-log{
+    margin: 40px 0px 20px 0px;
+    width: 15%;
+    height: 20%;
+    display: flex;
+}
+.lista
+{
+    list-style: none;
+    font-size: 20px;
+}
+li{
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px 10rem 10px 10rem;
+}
+.body_tela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+strong{
+    color: rgb(186, 24, 78);
+}

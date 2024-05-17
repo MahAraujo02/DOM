@@ -1,0 +1,19 @@
+input{
+    width: 100px;
+}
+
+#botao{
+    width: 50px;
+    background-color: pink;
+}
+
+div {
+    background-color: rgb(163, 163, 207);
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}

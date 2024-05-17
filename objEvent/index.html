@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: black;
+}
+      .item_propriedades {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border: solid 1px black;
+            border-radius: 10px;
+            width: 36vw;
+            height: 85vh;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
+      .div_ele{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      span{
+        margin-bottom: 80px;
+        background-color: white;
+      }
+      a,p{
+        margin-bottom: 40px;
+        background-color: white;
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: 40px;
+      }
+
+      .item_nome {
+            font-size: 90px;
+        }
+
+        .item_valor {
+            font-size: 90px;
+            color: red;
+        }
+
+        .item_liquidacao {
+            font-size:40px ;
+            padding: 1rem 9rem;
+            background-color: rgb(154, 243, 178);
+            border-radius: 5px;
+          
+        }
+
+        .item_distribuidor {
+           
+        }
+
+
+    </style>
+</head>
+<body>
+    <main id="root">
+    </main>
+    <script>
+
+        let produto = {
+        nome: 'Notebook',
+        valor: 3000.00,
+        liquidacao: true,
+        distribuidor: 'lojadakenzie.com.br'
+      }
+
+      const ul = document.createElement('ul')
+      const li = document.createElement('li')
+      const div = document.createElement('div')
+
+      const main = document.querySelector('main')
+
+      const nome = document.createElement('span')
+      nome.innerText = produto.nome
+      nome.classList.add('item_nome');
+
+      const valor = document.createElement('span')
+      valor.innerText = parseFloat(produto.valor)
+      valor.classList.add('item_valor');
+
+      const liquidacao = document.createElement('span')
+      liquidacao.innerText = produto.liquidacao ? 'Em liquidação' : 'Preço imperdivel'
+      liquidacao.classList.add('item_liquidacao');
+     
+      const distribuidor = document.createElement('a')
+      distribuidor.innerText = 'Fabricante: ' + produto.distribuidor
+      distribuidor.classList.add('item_distribuidor');
+      
+      const textoAbaixo = document.createElement('p')
+      textoAbaixo.innerText = ''
+      
+      const divPropriedades = document.createElement('div');
+        divPropriedades.classList.add('item_propriedades');
+
+        divPropriedades.appendChild(nome);
+        divPropriedades.appendChild(valor);
+        divPropriedades.appendChild(liquidacao);
+        divPropriedades.appendChild(textoAbaixo)
+        divPropriedades.appendChild(distribuidor);
+
+      li.appendChild(divPropriedades);
+      ul.appendChild(li)
+      div.appendChild(ul)
+      div.classList.add('div_ele')
+      main.appendChild(div)
+
+      let element = document.getElementsByTagName('li')[0]
+      let elementInformado = document.getElementsByClassName('item_liquidacao')[0]
+      let mostrarDesconto = false;
+
+
+      element.addEventListener("click", function (e) {
+      let elementoCapture = e.target.className;
+
+      let desconto = produto.valor * 0.3;
+      let valorDescontado = (produto.valor - desconto).toFixed(2);
+
+
+        if (elementoCapture == "item_liquidacao") {
+        if (elementInformado.children.length === 0) {
+          if(!mostrarDesconto){
+            textoAbaixo.innerHTML = "Hoje apenas: " + valorDescontado;
+          textoAbaixo.style.color = 'pink'
+            mostrarDesconto = true
+        } else {
+         textoAbaixo.innerHTML = "";
+         mostrarDesconto = false
+          }
+        }
+      }
+      })
+      
+     
+  
+
+    </script>
+</body>
+</html>

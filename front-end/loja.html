@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="module" src="loja.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <div class="navbar">
+            <h1>SOUL</h1>
+            <nav>
+                <ul class="options">
+                    <li class="filter"><a href="#">Calça</a></li>
+                    <li class="filter"><a href="#">vestido</a></li>
+                    <li class="filter"><a href="#">Bolsa</a></li>
+                    <li class="filter"><a href="#">Macaquinho</a></li>
+                    <li class="filter"><a href="#">Blusa</a></li>
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="input-icon">
+            <input type="text" id="searchProd" placeholder="Pesquisar produtos">
+            <i class="fas fa-search" style="color: rgba(0, 0, 0, 0.274);"></i>
+        </div>
+
+    </header>
+
+
+    <main>
+        <section class="products-section">
+            <h1>VITRINE</h1>
+            <span class="qtd-span">0</span>
+            <div class="products-div" id="root">
+                <ul class="products-list" id="products-list">
+                    
+                </ul>
+            </div>
+        </section>
+        <section class="cart-section">
+            <h1 class="my-cart">My Cart</h1>
+            <div class="cart-products">
+
+                <ul class="cart-products-list" >
+                    <h1 id="message-cart">CARRINHO VAZIO</h1>
+                </ul>
+                <div class="total-price-div">
+                    <h1>Total</h1>
+                    <span class="total-price">0</span>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+</body>
+</html>

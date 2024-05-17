@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+.navbar{
+  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.options{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    flex-direction: row;
+}
+.filter{
+    display: flex;
+    margin: 10px;
+}
+.input-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 5px;
+}
+.input-icon input{
+    border: none;
+    background-color:transparent;
+    outline: none;
+}
+.products-section{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.products-div{
+    background-color: beige;
+    width: 90%;
+    height: 90%;
+    display: flex;
+}
+.products-list{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    background-color: rgb(240, 124, 171);
+    overflow: auto	;
+
+}
+.product-card{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+}
+.product-card img{
+    width: 100%; 
+    height: 70%; 
+    object-fit: cover; 
+    border-radius: 5px;
+
+}
+.product-card p{
+    margin-top: 10px;
+    line-height: 20px;
+    width: 100%;    
+    height: 10%;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.add-to-cart-button, .product-name, .product-price
+{
+flex: 1;
+}
+.cart-section{
+    background-color: #80dd7a;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cart-products{
+    background-color: beige;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.cart-products-list{
+    margin-top: 5px;
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    overflow: auto	;
+    box-shadow:.4em 0.4em 1em rgba(0, 0, 0, 0.323);
+    border-radius: 2px;
+/* estreitar mais e botar uma sombra */
+}
+.cart-item{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    background-color: #d9d9d9;
+    padding: 10px;
+    flex-direction: row;
+    border: 1px solid black;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-around;
+    border-radius: 7px;
+ 
+}
+.cart-item img{
+    width: 10%; 
+    height: 80%; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+.total-price-div{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 10%;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cart-products-list h1{
+     display: flex;
+     width: 100%;  
+     text-align: center;  
+     justify-content: center;
+     align-items: center;
+}
+.box {
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box {
+    width: 100%;
+    height: 176px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.my-cart{
+    font-size: 15px;
+    margin: 5px;
+}

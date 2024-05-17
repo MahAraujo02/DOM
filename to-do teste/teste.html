@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+   <div class="prin">
+    <header>
+    <h1>MY TASK'S</h1>
+       <div class="container">
+           <div class="input-icone">
+               <input type="text" id="pesquisa" placeholder="Pesquisar tarefa">
+               <i class="fas fa-search"></i>
+           </div>
+       </div>
+   </header>
+
+   <main>
+
+       <div class="Adicionar-tarefa">
+          
+            <div class="titulo1"><h2>Inserir tarefa</h2></div>
+           <div class="alinhar-campos">
+               <input class="tipo" type="text" id="titulo-texto" placeholder="Digite algo">
+           <select class="tipo" id="tipo-tarefa" name="prioridade">
+               <option value="" disabled selected hidden>Selecione o tipo</option>
+               <option value="Urgente">Urgente</option>
+               <option value="Prioritario">Prioritário</option>
+                <option value="Normal">Normal</option>
+           </select>
+           </div>
+           <button id="botao">Adicionar tarefa na lista</button>
+           </div>
+
+       <div class=" conteudo-lista">
+            <div class="titulo">
+                <h2>Tarefas</h2>
+            </div>
+           <ul class="listaDeCoisas">
+               
+           </ul>
+       </div>
+
+   </main></div>
+
+    <script src="teste.js"></script>
+</body>
+</html>
