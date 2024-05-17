@@ -158,3 +158,4 @@ filtros.forEach(botao => {
         renderProducts(filteredCards);
     });
 });
+
